@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.0.0"
+ruby "2.1.2"
 
 gem "rails", "4.0.2"
 gem "sass-rails", "~> 4.0.0"
@@ -52,6 +52,7 @@ group :development do
   gem "rack-mini-profiler"
   gem "bullet"
   gem "thin"
+  gem "rb-readline"
 end
 
 group :development, :test do

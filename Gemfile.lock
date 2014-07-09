@@ -267,6 +267,7 @@ GEM
     rainbow (2.0.0)
     raindrops (0.12.0)
     rake (10.1.0)
+    rb-readline (0.5.1)
     request_store (1.0.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -410,6 +411,7 @@ DEPENDENCIES
   quiet_assets
   rack-mini-profiler
   rails (= 4.0.2)
+  rb-readline
   roo!
   rspec-rails
   rubocop
