@@ -40,7 +40,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # content-planner-mysql-setup
     d.run "content-planner-mysql-setup",
       args: "--rm --link content-planner-mysql:db -v /var/www/content-planner:/var/www/content-planner",
-      cmd: "cat config/docker_mysql.sql | mysql -u root -pcontent-planner -h db",
+      cmd: "bash -c 'cat config/docker_mysql.sql | mysql -u root -pcontent-planner -h db'",
       daemonize: false,
       image: "content-planner"
 
