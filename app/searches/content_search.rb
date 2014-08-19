@@ -10,9 +10,11 @@ class ContentSearch < Searchlight::Search
     @column = column
     @direction = direction
   end
-
+  
   def results
-    super().order("contents.#{@column} #{@direction}")
+    super()
+      .order(ref_no: @direction.to_sym)
+      .order("contents.#{@column} #{@direction}")
   end
 
   def search_content_plan_ids
